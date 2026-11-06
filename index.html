@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOKYO DASH — Sushi Delivered | Alta Cocina Contemporánea</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="apple-touch-icon" href="assets/logo.svg">
+<link rel="shortcut icon" href="assets/logo.svg">
+<meta name="description" content="Tokyo Dash — Alta cocina japonesa contemporánea. Sushi delivery de autor, dark luxury, precisión en cada bocado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css?v=2">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="logo" href="#">
+    <span class="logo-badge"><img src="assets/logo.svg" alt="Tokyo Dash — Sushi Delivered"></span>
+    <span class="logo-text">TOKYO DASH<em>SUSHI DELIVERED</em></span>
+  </a>
+  <div class="nav-links">
+    <a href="#firma">Firma</a><a href="#ritual">Ritual</a><a href="#menu">Menú</a><a href="#reserva">Reserva</a>
+  </div>
+  <div class="nav-cta">
+    <div class="order-count" id="orderCount">0</div>
+    <button class="btn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Pedir ahora →</button>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="grid-lines"></div>
+  <div style="position:relative;z-index:3">
+    <span class="eyebrow"><i></i> Alta cocina contemporánea · CDMX — Tokio</span>
+    <h1><span class="accent">TOKYO</span><span class="outline">DASH</span></h1>
+    <p class="hero-sub">Precisión <span>japonesa.</span> Velocidad <span>urbana.</span></p>
+    <p class="hero-p">Sushi de autor entregado en 25–35 minutos. Arroz de grano corto, pescado de pesca responsable y presentación de alta costura — sin salir de casa.</p>
+    <div class="hero-actions">
+      <button class="btn magnetic" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Explorar menú →</button>
+      <button class="btn btn-ghost magnetic" onclick="document.getElementById('reserva').scrollIntoView({behavior:'smooth'})">Reservar mesa</button>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-item"><b>25<small>–35</small> min</b><span>Tiempo medio</span></div>
+      <div class="meta-item"><b>4.9<small>/5</small></b><span>+2.4k reseñas</span></div>
+      <div class="meta-item"><b>+120<small> platos</small></b><span>De autor</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual" id="heroVisual">
+    <div class="hero-ring"></div>
+    <div class="hero-img"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1200&auto=format&fit=crop" alt="Sushi flat lay editorial"></div>
+    <div class="float-card fc1" data-depth="18">
+      <div class="fc-label">Signature · 01</div>
+      <div class="fc-value">Nigiri Toro <span>$24</span></div>
+      <div class="stars">★★★★★ <span style="color:var(--ivory45);font-size:11px">4.9 (812)</span></div>
+    </div>
+    <div class="float-card fc2" data-depth="26">
+      <div class="fc-label">Entrega</div>
+      <div class="fc-value">Dash Express <span>🛵</span></div>
+      <div style="font-size:12px;color:var(--ivory70)">En vivo · Tu pedido en ruta</div>
+    </div>
+    <div class="float-card fc3" data-depth="12">
+      <div style="width:38px;height:38px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-size:18px">◉</div>
+      <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:14px">Flat Lay · Cenital</div><div style="font-size:11px;color:var(--ivory45)">Fotografía de estudio 8K</div></div>
+    </div>
+    <div class="kanji-vertical">寿司デリバリー・東京ダッシュ</div>
+  </div>
+  <div class="scroll-hint">Desliza para descubrir</div>
+</header>
+
+<div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+
+<section id="firma">
+  <div class="sec-head reveal">
+    <div><div class="sec-kicker">La selección firma</div><h2 class="sec-title">Piezas <em>icónicas</em></h2></div>
+    <p class="sec-desc">Tres creaciones que definen Tokyo Dash. Diseño asimétrico, vidrio esmerilado y luz dramática — como en galería.</p>
+  </div>
+  <div class="sig-grid">
+    <article class="sig-main reveal">
+      <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1400&auto=format&fit=crop" alt="Sushi de firma">
+      <div class="sig-info">
+        <span class="badge">★ Más vendido</span>
+        <h3 style="font-family:'Syne',sans-serif;font-size:38px;font-weight:800;line-height:1">Dash Dragon Roll</h3>
+        <p style="color:var(--ivory70);margin:10px 0 20px;max-width:460px;line-height:1.6">Anguila glaseada, aguacate y tobiko sobre arroz avinagrado. 8 piezas, precisión quirúrgica.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span class="price">$22 <small>$28</small></span><button class="add-btn" data-name="Dash Dragon Roll" aria-label="Añadir">+</button></div>
+      </div>
+    </article>
+    <div class="sig-side">
+      <article class="sig-card reveal"><span class="num">01</span><div><span class="badge" style="background:transparent;border:1px solid var(--line2)">Chef's cut</span><h3>Nigiri Salmón Ahumado</h3><p>Llama suave, sal ahumada y ralladura de yuzu. Corte en ángulo de 42°.</p></div><div class="price-row"><span class="price">$18</span><button class="add-btn" data-name="Nigiri Salmón Ahumado">+</button></div></article>
+      <article class="sig-card reveal"><span class="num">02</span><div><span class="badge" style="background:transparent;border:1px solid var(--line2)">Veggie</span><h3>Volcán de Hongos Shiitake</h3><p>Shiitake asado al miso, espárrago y sésamo negro. Umami profundo.</p></div><div class="price-row"><span class="price">$16</span><button class="add-btn" data-name="Volcán Shiitake">+</button></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="ritual" id="ritual">
+  <div class="ritual-inner">
+    <div class="ritual-img reveal">
+      <img src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?q=80&w=1200&auto=format&fit=crop" alt="Proceso sushi">
+      <div class="ritual-tag"><div class="fc-label">Atelier · 06:00 AM</div><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:20px;margin-top:4px">Pescado del día</div></div>
+    </div>
+    <div class="reveal">
+      <div class="sec-kicker">El ritual Dash</div>
+      <h2 class="sec-title" style="margin-bottom:30px">No es delivery.<br><em>Es ceremonia.</em></h2>
+      <div class="step"><div class="step-num">01</div><div><h4>Selección al amanecer</h4><p>Pescado seleccionado a diario por nuestro itamae. Nada llega con más de 24h de pesca.</p></div></div>
+      <div class="step"><div class="step-num">02</div><div><h4>Preparación en 8 minutos</h4><p>Cada rollo se arma al momento de la orden. Arroz tibio, cuchillo afilado, manos expertas.</p></div></div>
+      <div class="step"><div class="step-num">03</div><div><h4>Dash en 25 minutos</h4><p>Empaque térmico de grado médico y ruta optimizada. Temperatura perfecta a tu puerta.</p></div></div>
+      <div class="stats">
+        <div class="stat"><b data-count="98">0<span>%</span></b><span>Recompra</span></div>
+        <div class="stat"><b data-count="25">0<span>min</span></b><span>Entrega prom.</span></div>
+        <div class="stat"><b data-count="15">0<span>+</span></b><span>Años de oficio</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="sec-head reveal">
+    <div><div class="sec-kicker">Menú interactivo</div><h2 class="sec-title">Toda la <em>carta</em></h2></div>
+    <p class="sec-desc">Desliza horizontalmente. Cada pieza está numerada, fotografiada en cenital y lista para añadir.</p>
+  </div>
+  <div class="pills" id="pills">
+    <button class="pill active">Todos</button><button class="pill">Nigiri</button><button class="pill">Rolls</button><button class="pill">Sashimi</button><button class="pill">Veggie</button>
+  </div>
+  <div class="hscroll" id="hscroll"></div>
+</section>
+
+<div class="reserve" id="reserva">
+  <div class="reserve-box reveal">
+    <div style="position:relative;z-index:2">
+      <div class="sec-kicker">Experiencia Tokyo Dash</div>
+      <h2>Reserva tu<br><span>ritual.</span></h2>
+      <p style="color:var(--ivory70);line-height:1.8;margin:20px 0 28px;max-width:460px">Mesa para 12 en nuestro atelier oscuro, chef en vivo y maridaje de sake. Confirma en menos de 60 segundos.</p>
+      <ul style="list-style:none;display:grid;gap:14px;color:var(--ivory70);font-size:14px">
+        <li>✓ &nbsp;Barra de 8 asientos frente al itamae</li><li>✓ &nbsp;Menú degustación de 12 tiempos</li><li>✓ &nbsp;Cancelación gratuita hasta 4h antes</li>
+      </ul>
+    </div>
+    <form class="form-card" id="reserveForm" style="position:relative;z-index:2">
+      <div class="frow">
+        <div class="field"><label>Nombre</label><input required placeholder="Tu nombre"></div>
+        <div class="field"><label>Comensales</label><select><option>2 personas</option><option>4 personas</option><option>6 personas</option><option>8+ personas</option></select></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>Fecha</label><input type="date" required></div>
+        <div class="field"><label>Hora</label><input type="time" required></div>
+      </div>
+      <div class="field"><label>Ocasión</label><select><option>Cena romántica</option><option>Negocios</option><option>Celebración</option><option>Experiencia Chef's Table</option></select></div>
+      <button class="btn" style="width:100%;justify-content:center" type="submit">Confirmar reserva →</button>
+      <p style="text-align:center;font-size:12px;color:var(--ivory45);margin-top:14px">Sin tarjeta · Confirmación inmediata</p>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div style="display:flex;justify-content:center;margin-bottom:30px"><img src="assets/logo.svg" alt="Tokyo Dash" style="width:190px;height:auto"></div>
+  <div class="footer-big">TOKYO<br><span>DASH</span></div>
+  <div class="footer-grid"><span>© 2026 Tokyo Dash · Sushi Delivered</span><span>寿司デリバリー — Hecho con precisión</span><a href="#hero" style="color:var(--accent)">Volver arriba ↑</a></div>
+</footer>
+
+<div class="toast" id="toast"><i></i><span id="toastMsg">Añadido</span></div>
+
+<script src="js/script.js?v=2"></script>
+</body>
+</html>

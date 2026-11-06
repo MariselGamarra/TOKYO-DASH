@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" role="img" aria-label="Tokyo Dash Sushi Delivered">
+  <title>TOKYO DASH — SUSHI DELIVERED</title>
+  <!-- TEXTO SUPERIOR -->
+  <text x="160" y="32" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="3" fill="#B9BEC6">TOKYO DASH</text>
+
+  <!-- CIRCULO DOBLE -->
+  <circle cx="160" cy="180" r="108" fill="none" stroke="#8E9197" stroke-width="5"/>
+  <circle cx="160" cy="180" r="96" fill="none" stroke="#8E9197" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- MONOGRAMA NARANJA (PEZ + D) -->
+  <g fill="#E85A24">
+    <!-- PEZ: cuerpo + aleta -->
+    <path d="M 118 96 C 128 74, 154 62, 182 68 C 204 73, 216 88, 214 106 C 212 124, 198 138, 180 146 L 168 152 L 174 132 C 178 120, 172 110, 160 108 C 146 106, 134 118, 132 142 L 130 168 C 128 188, 128 204, 118 220 C 106 202, 102 180, 104 156 C 106 132, 110 112, 118 96 Z"/>
+    <!-- COLA SUPERIOR -->
+    <path d="M 118 96 C 108 78, 98 72, 84 76 C 92 90, 92 104, 84 118 C 98 122, 110 112, 118 96 Z"/>
+    <!-- OJO -->
+    <circle cx="180" cy="98" r="7" fill="#0B0B0C"/>
+    <circle cx="182" cy="96" r="2.2" fill="#E85A24"/>
+  </g>
+
+  <!-- D INFERIOR -->
+  <path fill="#E85A24" d="M 110 218 L 148 218 C 154 232, 154 248, 148 262 L 166 262 C 192 262, 210 246, 210 268 C 210 290, 192 306, 166 306 L 104 306 C 116 288, 120 268, 118 246 C 117 236, 113 226, 110 218 Z" opacity="0.98"/>
+  <path fill="#0B0B0C" d="M 132 238 L 144 238 C 152 238, 158 244, 158 252 C 158 260, 152 266, 144 266 L 128 266 C 130 256, 131 247, 132 238 Z"/>
+
+  <!-- TEXTO INFERIOR -->
+  <text x="160" y="344" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="21" font-weight="900" letter-spacing="4" fill="#B9BEC6">SUSHI DELIVERED</text>
+  <text x="160" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#8E9197">EST 2011</text>
+</svg>

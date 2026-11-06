@@ -1,0 +1,13 @@
+{
+  "name": "tokyo-dash",
+  "version": "1.0.0",
+  "description": "TOKYO DASH — Sushi Delivered | Landing dark luxury (HTML + CSS + JS)",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
