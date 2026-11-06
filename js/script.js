@@ -13,8 +13,27 @@ const mq=document.getElementById('marquee');
 const txt="TOKYO DASH ✦ SUSHI DELIVERED ✦ ALTA COCINA ✦ 25 MIN ✦ ";
 mq.innerHTML=`<span>${txt.repeat(4)}</span><span>${txt.repeat(4)}</span>`;
 
+const introScreen=document.getElementById('introScreen');
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    introScreen.classList.add('hidden');
+  },1700);
+});
+
 // Nav scroll
-addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',scrollY>40)});
+addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',scrollY>40);const max=document.documentElement.scrollHeight-window.innerHeight;const progress=(scrollY/max)*100;document.getElementById('scrollProgress').style.transform=`scaleX(${Math.min(Math.max(progress/100,0),1)})`;});
+
+// Section highlight in nav
+const navLinks=[...document.querySelectorAll('.nav-links a')];
+const sections=navLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+const sectionObserver=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+   if(!entry.isIntersecting)return;
+   const id=entry.target.id;
+   navLinks.forEach(link=>link.classList.toggle('active', link.getAttribute('href')==='#'+id));
+ });
+},{rootMargin:'-18% 0px -55% 0px',threshold:0.15});
+sections.forEach(section=>sectionObserver.observe(section));
 
 // Reveal
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
