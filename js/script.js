@@ -25,6 +25,23 @@ addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('
 
 // Section highlight in nav
 const navLinks=[...document.querySelectorAll('.nav-links a')];
+const navToggle=document.getElementById('navToggle');
+const navLinksPanel=document.getElementById('navLinks');
+function closeMobileNav(){
+ navLinksPanel.classList.remove('open');
+ navToggle.classList.remove('open');
+ navToggle.setAttribute('aria-expanded','false');
+ navToggle.setAttribute('aria-label','Abrir menú de navegación');
+}
+navToggle.addEventListener('click',()=>{
+ const isOpen=navToggle.getAttribute('aria-expanded')==='true';
+ navToggle.setAttribute('aria-expanded',String(!isOpen));
+ navToggle.setAttribute('aria-label',isOpen?'Abrir menú de navegación':'Cerrar menú de navegación');
+ navToggle.classList.toggle('open',!isOpen);
+ navLinksPanel.classList.toggle('open',!isOpen);
+});
+navLinks.forEach(link=>link.addEventListener('click',closeMobileNav));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMobileNav()});
 const sections=navLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
 const sectionObserver=new IntersectionObserver(entries=>{
  entries.forEach(entry=>{
