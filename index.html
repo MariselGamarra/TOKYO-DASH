@@ -15,13 +15,30 @@
 </head>
 <body>
 
+<div class="intro-screen" id="introScreen" aria-hidden="true">
+  <div class="intro-backdrop"></div>
+  <div class="intro-frame" aria-hidden="true"></div>
+  <div class="intro-lantern intro-lantern-left" aria-hidden="true"><span></span></div>
+  <div class="intro-lantern intro-lantern-right" aria-hidden="true"><span></span></div>
+  <div class="intro-content">
+    <div class="intro-badge">Tradición · precisión · sabor</div>
+    <div class="intro-seal" aria-hidden="true">福</div>
+    <h2>東京<br><span>Dash</span></h2>
+    <div class="intro-pattern"></div>
+    <p>锦食传承 · 匠心入味</p>
+    <div class="intro-caption">Herencia china · cocina de autor</div>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <nav id="nav">
   <a class="logo" href="#">
     <span class="logo-badge"><img src="assets/logo.svg" alt="Tokyo Dash — Sushi Delivered"></span>
     <span class="logo-text">TOKYO DASH<em>SUSHI DELIVERED</em></span>
   </a>
   <div class="nav-links">
-    <a href="#firma">Firma</a><a href="#ritual">Ritual</a><a href="#menu">Menú</a><a href="#reserva">Reserva</a>
+    <a href="#firma">Firma</a><a href="#ritual">Ritual</a><a href="#reviews">Reseñas</a><a href="#menu">Menú</a><a href="#reserva">Reserva</a>
   </div>
   <div class="nav-cta">
     <div class="order-count" id="orderCount">0</div>
@@ -114,6 +131,51 @@
   </div>
 </div>
 
+<section class="proof" id="reviews">
+  <div class="sec-head reveal">
+    <div><div class="sec-kicker">Lo que dicen</div><h2 class="sec-title">Clientes <em>habituales</em></h2></div>
+    <p class="sec-desc">La experiencia perfecta no se mide solo por el sabor, sino por la confianza, la puntualidad y la sensación de ritual que se lleva a casa.</p>
+  </div>
+
+  <div class="review-grid">
+    <article class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>“La mejor experiencia de delivery que he probado en la ciudad. Todo llega a temperatura perfecta y la presentación parece de restaurante Michelin.”</p>
+      <div class="review-author"><strong>Marina G.</strong><span>CDMX · Ejecutiva</span></div>
+    </article>
+    <article class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>“Pedí una cena para dos y fue exactamente como una experiencia de chef: rápida, elegante y con una calidad increíble en cada pieza.”</p>
+      <div class="review-author"><strong>Diego R.</strong><span>Roma Norte · Cliente VIP</span></div>
+    </article>
+    <article class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>“El servicio es impecable. La entrega llegó a tiempo y el nigiri toro estaba literalmente a punto de terminarse en mi mesa.”</p>
+      <div class="review-author"><strong>Renata M.</strong><span>Polanco · Foodie</span></div>
+    </article>
+  </div>
+
+  <div class="faq-shell reveal">
+    <div class="sec-kicker" style="margin-bottom:24px">Preguntas rápidas</div>
+    <details open>
+      <summary>¿Cuánto tarda la entrega?</summary>
+      <p>En promedio entregamos en 25–35 minutos en zonas premium de CDMX. Si la ruta está congestionada, te avisamos antes del envío.</p>
+    </details>
+    <details>
+      <summary>¿Hacen pedidos para celebraciones?</summary>
+      <p>Sí. Organizamos cenas de celebración, cócteles, degustaciones privadas y regalos para empresas con un servicio más cuidadoso.</p>
+    </details>
+    <details>
+      <summary>¿Ofrecen opciones vegetarianas o sin gluten?</summary>
+      <p>Tenemos piezas veganas, vegetarianas y opciones sin gluten con etiquetado claro en cada plato para que puedas pedir sin dudas.</p>
+    </details>
+    <details>
+      <summary>¿Puedo reservar una mesa en el atelier?</summary>
+      <p>Claro. Puedes reservar directamente desde esta misma página y recibirás confirmación inmediata por correo o WhatsApp.</p>
+    </details>
+  </div>
+</section>
+
 <section id="menu">
   <div class="sec-head reveal">
     <div><div class="sec-kicker">Menú interactivo</div><h2 class="sec-title">Toda la <em>carta</em></h2></div>
@@ -154,9 +216,10 @@
 <footer>
   <div style="display:flex;justify-content:center;margin-bottom:30px"><img src="assets/logo.svg" alt="Tokyo Dash" style="width:190px;height:auto"></div>
   <div class="footer-big">TOKYO<br><span>DASH</span></div>
-  <div class="footer-grid"><span>© 2026 Tokyo Dash · Sushi Delivered</span><span>寿司デリバリー — Hecho con precisión</span><a href="#hero" style="color:var(--accent)">Volver arriba ↑</a></div>
+  <div class="footer-grid"><span>© 2026 Tokyo Dash · Sushi Delivered</span><span>寿司デリバリー — Hecho con precisión</span><span>Diseñado por Marisel Gamarra Vega</span><a href="#hero" style="color:var(--accent)">Volver arriba ↑</a></div>
 </footer>
 
+<a class="floating-order" href="#menu">Pedir ahora</a>
 <div class="toast" id="toast"><i></i><span id="toastMsg">Añadido</span></div>
 
 <script src="js/script.js?v=2"></script>
